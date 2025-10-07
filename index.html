@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Тестовая вёрстка</title>
+  <meta name="description" content="Тестовая адаптивная вёрстка (BEM + CSS)" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body class="page">
+
+  <section class="hero">
+    <header class="header">
+      <div class="container header__inner">
+        <a class="header__logo" href="#">LOREMIPSUM.<span>NET</span></a>
+        <nav class="nav header__nav" aria-label="Главное">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#">Бизнес</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">О нас</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Цены</a></li>
+            <li class="nav__item"><a class="nav__link nav__link--cta" href="#order">Оформить заказ</a></li>
+          </ul>
+        </nav>
+        <button class="burger header__burger" aria-label="Открыть меню" aria-expanded="false">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+      </div>
+    </header>
+    <div class="container hero__inner">
+      <h1 class="hero__title">
+        <span class="text--accent">LOREM IPSUM</span> DOLOR SIT<br>
+        AMETCONSECTETUR <span class="text--accent">ADIPISCING</span>
+      </h1>
+      <p class="hero__lead">At vero eos et accusamus et iusto odio dignissimos ducimus!</p>
+      <ul class="hero__bullets">
+        <li>Totam rem aperiam eaque ipsa</li>
+        <li>Sit voluptatem accusantium doloremque laudantium</li>
+        <li>Sed ut perspiciatis, unde omnis iste natus error</li>
+      </ul>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#order">ЗАКАЗАТЬ</a>
+        <a class="btn" href="#">ПОДРОБНЕЕ</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="order" class="order">
+    <div class="container order__inner">
+      <h2 class="order__title">ОФОРМЛЕНИЕ <span class="text--accent">ЗАКАЗА</span></h2>
+      <p class="order__subtitle">Перед заполнением формы ознакомьтесь с нашей схемой работы</p>
+      <ul class="steps">
+        <li class="steps__item">
+          <div class="icon-circle"><img src="assets/icons/search.svg" alt="search"></div>
+          <p class="steps__caption">Lorem ipsum dolor sit amet</p>
+        </li>
+        <li class="steps__dots" aria-hidden="true">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        </li>
+        <li class="steps__item">
+          <div class="icon-circle"><img src="assets/icons/percent.svg" alt="percent"></div>
+          <p class="steps__caption">Consecteturadipiscing elit</p>
+        </li>
+        <li class="steps__dots" aria-hidden="true">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        </li>
+        <li class="steps__item">
+          <div class="icon-circle"><img src="assets/icons/add-file.svg" alt="file"></div>
+          <p class="steps__caption">Sed do eiusmod tempor</p>
+        </li>
+        <li class="steps__dots" aria-hidden="true">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        </li>
+        <li class="steps__item">
+          <div class="icon-circle"><img src="assets/icons/message.svg" alt="message"></div>
+          <p class="steps__caption">Esse cillum dolore eu fugiat</p>
+        </li>
+        <li class="steps__dots" aria-hidden="true">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        </li>
+        <li class="steps__item">
+          <div class="icon-circle"><img src="assets/icons/money.svg" alt="money"></div>
+          <p class="steps__caption">Excepteur sint occaecat</p>
+        </li>
+      </ul>
+      <form class="form" action="#" method="post" novalidate>
+        <div class="form__row">
+          <div class="form__col">
+            <div class="custom-select">
+              <div class="custom-select__trigger">
+                <span class="custom-select__value">Выберите тип системы</span>
+              </div>
+              <div class="custom-select__dropdown">
+                <div class="custom-select__option" data-value="">Выберите тип системы</div>
+                <div class="custom-select__option" data-value="sed">Sed ut perspiciatis</div>
+                <div class="custom-select__option" data-value="nemo">Nemo enim ipsam</div>
+                <div class="custom-select__option" data-value="et">Et harum quidem</div>
+                <div class="custom-select__option" data-value="temporibus">Temporibus autem</div>
+                <div class="custom-select__option" data-value="itaque">Itaque earum rerum</div>
+                <div class="custom-select__option" data-value="at">At vero eos et accusamus</div>
+                <div class="custom-select__option" data-value="nam">Nam libero tempore</div>
+                <div class="custom-select__option" data-value="soluta">Soluta nobis est eligendi</div>
+                <div class="custom-select__option" data-value="cumque">Cumque nihil impedit</div>
+              </div>
+              <input type="hidden" name="system_type" value="">
+            </div>
+          </div>
+          <div class="form__col">
+            <input name="email" type="email" class="form__input" placeholder="you@example.com" required>
+          </div>
+          <div class="form__col">
+            <input name="name" type="text" class="form__input" placeholder="Имя">
+          </div>
+        </div>
+        <div class="form__row form__row--slider-file">
+          <div class="form__progress">
+            <div class="form__progress-header">
+              <label for="progress" class="form__label">Sed ut perspiciatis, unde omnis iste natus</label>
+              <div class="form__progress-value"><span id="rangeValue">75</span>%</div>
+            </div>
+            <input id="progress" name="progress" type="range" min="0" max="100" value="75" class="form__range">
+          </div>
+          <div class="form__file">
+            <label class="btn btn--file">
+              <input name="file" type="file" accept=".pdf,.doc,.docx,.zip">
+              ПРИКРЕПИТЬ ФАЙЛ
+            </label>
+          </div>
+        </div>
+        <div class="form__row form__row--actions">
+          <button type="submit" class="btn btn--primary">ОТПРАВИТЬ</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__left">
+        <small>© 2018 «LOREMIPSUM.NET» Все права защищены.</small>
+      </div>
+  
+      <div class="footer__center">
+        <ul class="footer__payments">
+          <li><img src="assets/payment-icons/qiwi.svg" alt="QIWI" width="18"> QIWI wallet</li>
+          <li><img src="assets/payment-icons/ypay.svg" alt="Yandex Money" width="18"> Yandex Money</li>
+          <li><img src="assets/payment-icons/wm.svg" alt="WebMoney" width="18"> Web Money</li>
+        </ul>
+      </div>
+  
+      <div class="footer__right">
+        <a href="mailto:info@ipsum228.com" class="footer__link">
+          <img src="assets/icons/mail.svg" alt="email" width="16">
+          info@ipsum228.com
+        </a>
+        <a href="#" class="footer__link vk-link">
+          <img src="assets/icons/B.svg" alt="vk" width="16">
+          Мы Вконтакте
+        </a>
+      </div>
+    </div>
+  </footer>  
+
+  <script src="js/main.js"></script>
+</body>
+</html>
